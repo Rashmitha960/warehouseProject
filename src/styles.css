@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: #f0f0f0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #00bcd4;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.add-button {
+  width: 160px;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #0097a7;
+}
+
+.side-panel {
+  position: absolute;
+  top: 100px;
+  right: -320px;
+  width: 300px;
+  background: #1f2937;
+  padding: 20px;
+  border-left: 3px solid #00bcd4;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease;
+  z-index: 10;
+}
+
+.side-panel.open {
+  right: 30px;
+}
+
+.item-card {
+  background-color: #2d3748;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.item-card:hover {
+  border: 1px solid #00bcd4;
+  background-color: #3b4757;
+}
+
+.inventory-section {
+  margin-top: 20px;
+}
+
+.inventory-section h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.empty {
+  color: #ccc;
+  font-style: italic;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #2f3e4d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.inventory-table th, .inventory-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+.inventory-table th {
+  background-color: #37475a;
+  color: #00bcd4;
+}
+
+.inventory-table td {
+  color: #eee;
+}

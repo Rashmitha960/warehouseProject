@@ -1,0 +1,77 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f7f9fb;
+}
+
+.header {
+  background-color: #1e2a38;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.add-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.item-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.item {
+  background-color: #e1ecf4;
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item:hover {
+  background-color: #cce5ff;
+}
+
+.inventory-title {
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-table th, .inventory-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.inventory-table th {
+  background-color: #f0f0f0;
+}
